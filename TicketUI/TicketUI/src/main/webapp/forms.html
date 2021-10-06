@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Booking</title>
+</head>
+
+
+<body bgcolor="#FFEEAA">
+<h3  align="Center"> Enter the User Details </h3>
+<style>
+    .f1{
+border:2px solid red;
+color:solid black;
+}
+</style>
+
+<table class="f1" border="0px" >
+    <form class="f2">
+        <tr>
+            <td>Train Number:</td>
+            <td><input type="text" required id="id1"></td>
+        </tr>
+        <tr>
+            <td><label for="travelDate"> Date:</label></td>
+            <td><input type="Date" required id="travelDate" name="travelDate"></td>
+        </tr>
+        <tr>
+            <td>Passenger Name :</td>
+            <td><input type="text" required></td>
+        </tr>
+        <tr>
+            <td>Source :</td>
+            <td><input type="text" required></td>
+        </tr>
+        <tr>
+            <td>Destination :</td>
+            <td><input type="Text" required></td>
+        </tr>
+        <tr>
+            <td>Gender: </td>
+        <td>
+             <select>
+            <option value="Male">Male </option>
+            <option value="Female">Female </option>
+            <option value="Transgender">Transgender</option>
+            </select>
+        </td>
+    </tr>
+
+        <tr>
+            <td>Age:</td>
+            <td>
+            <input type="radio"id= "15-25" name="age" value="15-25">
+            <label for="15-25"> 15-25 </label>
+            <input type="radio"id= "25-40" name="age" value="25-40">
+                <label for="25-40"> 25-40 </label>
+
+            <input type="radio"id= "40 & above" name="age" value="40 & above">
+                <label for="40 & above"> 40 & above </label>
+            </td>
+
+        </tr>
+        <tr> <td></td></tr>
+        <tr></tr>
+        <tr>
+            <td><input type="submit" formaction="ticketinfo.html" value="Submit"> </td>
+            <td><input type="submit" formaction="forms.html" value ="Clear" > </td>
+        </tr>
+    </form>
+
+</table>
+Back to <a href="index.html" target="_parent">Main </a> Menu <br>
+
+<button onclick="myFun()"> submit </button>
+
+<script>
+function myFun(){
+    var x=document.getElementById("n");
+    document.body.appendChild(x);
+    }
+    var x=n.value;
+</script>
+</body>
+</html>
